@@ -1,33 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="16dp"
+    android:background="#6097B1"
     tools:context=".MainActivity">
 
-    <CheckBox
-        android:id="@+id/checkBox"
+<TextView
+    android:layout_marginTop="8dp"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:textColor="#ffffff"
+    android:textSize="24sp"
+    android:layout_height="wrap_content"
+    android:text="Quinta, 11 de Fevereiro"/>
+
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Check to choose color"
+        android:layout_marginTop="18dp"
+        android:layout_height="1dp"
+        android:background="#fefeef"
+        android:layout_below="@id/title"/>
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
         android:gravity="center"
-        android:textSize="24sp"
-        android:textColor="#1E2B1E"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:text="Complete todas as tarefas"/>
+
+    <CheckBox
+        android:id="@+id/check1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="54dp"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:text="Cortar a grama"
+        android:textColor="#ffffff"
         android:padding="10dp"
-        android:layout_margin="16dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/check1"
+        android:layout_marginTop="14dp"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:text="Cortar a grama"
+        android:textColor="#ffffff"
+        android:padding="10dp"
         />
 
-    <ImageView
-        android:id="@+id/scissor"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/ic_tesoura"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center"
-        app:tint="@color/black" />
 
-</LinearLayout>
+</RelativeLayout>
