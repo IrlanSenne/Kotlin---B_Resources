@@ -6,48 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="A"/>
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:text="B"/>
-</LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="15dp"
-        android:padding="5dp"
-        android:text="Text"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="15dp"
-        android:padding="5dp"
-        android:text="Text"/>
-    <EditText
-        android:id="@+id/teste"
+    <CheckBox
+        android:id="@+id/checkBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textAutoCorrect"
-        android:hint="Digite seu nome"
-        android:imeOptions="actionNext"
+        android:text="Check to choose color"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#1E2B1E"
+        android:padding="10dp"
+        android:layout_margin="16dp"
         />
 
-
+    <ImageView
+        android:id="@+id/scissor"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_tesoura"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        app:tint="@color/black" />
 
 </LinearLayout>
